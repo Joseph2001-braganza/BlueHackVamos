@@ -21,7 +21,7 @@
           font-size:20px;
           margin: 0;
         }
-      i {
+      i{
         color: #9ABC66;
         font-size: 100px;
         line-height: 200px;
@@ -34,7 +34,7 @@
         box-shadow: 0 2px 3px #C8D0D8;
         display: inline-block;
         margin: 0 auto;
-
+        height: 120px;
       }
       .buttonone{
         margin-top: 20px;
@@ -44,6 +44,9 @@
         box-shadow: 0 0 10px green;
         cursor: pointer;
       }
+      a{
+        text-decoration: none;
+      }
     </style>
     <body>
       <div class="card">
@@ -52,11 +55,7 @@
       </div>
         <h1>Success</h1>
         <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
+        <button class="buttonone" type="submit" ><a href="/">Back to Home</a></button>
       </div>
-
-      <form action="/" method="post">
-        {% csrf_token %}
-          <button class="buttonone" type="submit" >Back to Home</button>
-      </form>
     </body>
 </html>

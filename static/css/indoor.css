@@ -1,20 +1,22 @@
 :root{
-    --main-bg-color:rgb(0, 0, 0);
+  --main-bg-color:rgb(0, 0, 0);
     --navbarcolor1:red;
     --navbarcolor2:rgb(255, 102, 0);
+    --boxshadowcolor:rgba(126, 115, 115, 0.534);
     --filter:blur(0px);
     --border:red;
     --text:white;
-    --text2:gold;
+    --text2:rgb(255, 193, 193);
   }
   .darktheme{
-    --main-bg-color:rgb(226, 247, 255);
-    --navbarcolor1: rgb(129 129 129);
-    --navbarcolor2:rgb(251, 225, 208);
-    --filter:blur(10px);
-    --border:black;
-    --text:black;
-    --text2:black;
+    --main-bg-color:rgb(0, 0, 0);
+    --navbarcolor1:red;
+    --navbarcolor2:rgb(255, 102, 0);
+    --boxshadowcolor:rgba(126, 115, 115, 0.534);
+    --filter:blur(0px);
+    --border:red;
+    --text:white;
+    --text2:rgb(255, 193, 193);
   }
   
 
@@ -50,13 +52,11 @@ body{
     content: "";
     width: 98%;
     height: 98%;
-
     background: var(--main-bg-color);
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ff0052;
     margin-top: -6px;
 
   }
@@ -91,7 +91,6 @@ li a {
   .icon{
     width: 30px;
     height: 25px;
-    
   }
 
 .mainheading{
@@ -110,18 +109,17 @@ li a {
 }
 
   .working{
-    
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 50px;
-
+    border-radius: 10px;
   }
   .card{
     width: 250px;
     height: 350px;
 /* background-color: red; */
-box-shadow:0px 0px 10px var(--navbarcolor1);
+box-shadow:1px 1px 10px var(--boxshadowcolor);
 display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,8 +151,6 @@ display: flex;
     overflow: auto;
     white-space: nowrap;
     height: 600px;
-    
-
     /* width: 90%; */
     /* margin-left: 5%; */
   }
@@ -163,34 +159,38 @@ display: flex;
     /* background-color: black; */
     display: inline-block;
     width: 400px;
-    height: 500px;
+    height: 600px;
     margin-left: 20px;
     margin-right: 20px;
     /* margin-left: -50px; */
- 
-    box-shadow: 0 0 10px var(--navbarcolor1);
+    font-family: 'Segoe UI';
+    box-shadow: 0 0 10px var(--boxshadowcolor);
     border: none;
     z-index: -1;
     transition: transform 0.4s;
     text-align: center;
     padding-top:20px ;
     color: var(--text);
+    border-radius: 10px;
   }
-
   .scroll_card:hover{
     /* width: 300px; */
     z-index: 100;
     transform: scale(1.05);
-    border: 2px solid var(--navbarcolor1);
+    border: 2px solid var(--boxshadowcolor);
     /* background-color: blue; */
-
+  }
+  .scroll_card button{
+    width: 10rem;
+    height: 2rem;
+    border-radius: 5%;
+    background-color: rgb(34, 73, 60);
   }
 .first:hover{
     z-index: 100;
     /* transform: scale(1.2); */
     /* background-color: blue; */
     margin-left: 40px;
-
   }
   .content{
     font-size: 20px;
@@ -203,8 +203,6 @@ display: flex;
 .heading{
     color:var(--text);
     font-size: 40px;
-  
-
 }
 .themeimage{
   text-align: end;
@@ -216,4 +214,88 @@ display: flex;
 .themeimage img{
    width: 50px;
   height: 50px;
+}
+
+.connectionDevice{
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+  box-shadow: 0 0 10px var(--boxshadowcolor);
+  
+}
+.connectionDevice .newImage img {
+  width: 15rem;
+  height: 20rem;
+}
+.connectionDevice .description{
+  color: wheat;
+  padding:auto;
+  margin-left:10%;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+}
+
+.connectionDevice .description button{
+  margin-top:5rem;
+  width:20%;
+  height:10%;
+  border:1px solid wheat;
+  background-color:rgb(85, 73, 73);
+  border-radius:10%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.connectionDevice .description button:hover{
+  background-color: #3d3a39;
+  cursor: pointer;
+}
+
+
+/* changes need of toggle button over here ..  */
+.toggle-button {
+  margin-top:15px;
+  display: inline-block;
+  position: relative;
+  height: 30px;
+  width: 150px;
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #be6767;
+  transition: background-color 0.8s ease-in-out;
+}
+
+.toggle-button-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #333;
+  font-size: 14px;
+}
+
+.toggle-button-switch {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.toggle-button.active {
+  background-color: #4CAF50;
+}
+
+.toggle-button.active .toggle-button-switch {
+  transform: translateY(+50%);
+  background-color: #fff;
+}
+a{
+  text-decoration: none;
+  color:black;
 }

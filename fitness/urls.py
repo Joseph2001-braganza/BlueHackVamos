@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import Login, SignUp, Index,outdoor,Indoor,timing,register,Success
+from .views import Login, SignUp, Index,outdoor,Indoor,timing,register,Success,Devices,PayNow
 from .views import timing_all,Success_Custom,Logout
 from django.conf.urls.static import static
 from django.conf import settings
@@ -15,6 +15,7 @@ urlpatterns = [
     path('timing_all',timing_all.as_view(),name='timing_all'),
     path('register',register.as_view(),name='register'),
     path('success', Success.as_view(), name='success'),
+    path('Devices',Devices.as_view(),name='Devices'),
+    path('PayNow',PayNow.as_view(),name="PayNow"),
     path('success_custom', Success_Custom.as_view(), name='success_all'),
-
 ]

@@ -111,6 +111,15 @@ class Success(View):
     def post(self,request):
         return render(request,'success.html')
 
+class Devices(View):
+    def get(self,request):
+        return render(request,'trackyourDevices.html')
+    
+
+class PayNow(View):
+    def get(self,request):
+        return render(request,'payment.html')
+
 
 class Success_Custom(View):
     def get(self, request):
@@ -123,4 +132,6 @@ class Success_Custom(View):
             'slots': slot,
         }
         return render(request,'success_custom.html',data)
+
+
     

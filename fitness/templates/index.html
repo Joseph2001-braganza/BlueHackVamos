@@ -10,10 +10,10 @@
 <body>
 
 <div id="b"></div>
-<video autoplay muted loop id="myVideo">
+<!-- <video autoplay muted loop id="myVideo">
     <source src="/static/images/depositphotos_82238396-stock-video-boxer-training-shadow-boxing-over.mp4"
             type="video/mp4">
-</video>
+</video> -->
 
 
 <!-- navbar start -->
@@ -29,7 +29,6 @@
         <li><a href="/login">Login</a></li>
         <li><a href="/signup">SignUp</a></li>
         {% endif %}
-
     </ul>
 </div>
 
@@ -66,9 +65,6 @@
 
 
 <!-- two cards end -->
-<div class="themeimage" id="theme">
-    <img src="static/images/theme.png" alt="">
-</div>
 </body>
 </html>
 
@@ -78,9 +74,6 @@
             document.body.classList.toggle("darktheme");
             // console.log("woeking")
         }
-
-
-        {% comment %} toggle according to time  {% endcomment %}
 
         var time = new Date();
         var t = time.toLocaleString('en-US', { hour: 'numeric', hour12: true })

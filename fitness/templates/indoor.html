@@ -13,61 +13,69 @@
         <div class="navbar" style="z-index:101 ;">
             <ul>
                 <b>
-
                     <li><a class="webname" href="#home" style="font-size: 20px;">FITSPRINT</a></li>
                 </b>
-                <li style="float:right"><a href="#about">Login</a></li>
-              
+                <!-- changes made here -->
+                <!-- <div class="toggle-button" id="theme">
+                    <div class="toggle-button-label">Change Theme</div>
+                </div> -->
+                <!-- changes are ending here... -->
+                <!-- linking the depression thingy over here -->
+                <li style="float:right"><a href="https://upranayak-happyheart-injuryprevention-04yj1p.streamlit.app/">Check Body Vitals</a></li>
             </ul>
         </div>
-       
         <!-- navbar end -->
         <div class="mainheading">Indoor activites</div>
-
-
-        <div class="themeimage" id="theme">
-            <img src="static/images/theme.png" alt="">
-        </div>
-
-
-
-
-
         <div class="workingheading">How it works</div>
-    <div class="working">
+        <!-- editing from here  -->
+    <div class="connectionDevice" style="
+    display: flex;
+    flex-direction: row;
+    margin: 5%;
+    border-radius:2%;
+    ">
+        <div class="newImage">
+            <img style="margin:10px; border-radius:5%;" src="static/images/connectDevice.png" alt="">
+        </div>
+        <div class="description">
+            <h2>Connect Your Device</h2>
+            <div class="content">
+                Set up your GPS device and seamlessly upload your workouts right to Strava. No device? No problem record and connect anytime, anywhere with our web app.
+            </div>
+            <button><a href="Devices">Click Here</a></button>
+        </div>
+    </div>
 
-        <div class="one card">
+    <!-- this is the place where I am making some changes -->
+    <div class="working">
+        <div class="one card" style="border-radius: 20px;">
             <div class="content">
                 <b>Join the game</b>
             </div>
             <div class="image">
-                <img src="static/images/indoor1.jpeg" alt="">
+                <img src="static/images/user2.png" alt="">
             </div>
-
             <div class="content">
                 935,654<br>players
             </div>
-
         </div>
-        <div class="two card">
+        <div class="two card" style="border-radius: 20px;">
             <div class="content">
                 <b> Loose weight</b>
-             
             </div>
             <div class="image">
-                <img src="static/images/indoor2.jpeg" alt="">
-            </div>
+                <img src="static/images/weight_loss.png" alt="">
+            </div> 
             <div class="content">
                1,221,134 lbs lost
             </div>
         </div>
-        <div class="three card">
+        <div class="three card" style="border-radius: 20px;">
             <div class="content">
-
-              <b>  WIN and split the pot</b>
+              <b>  WIN and Split the POT</b>
             </div>
             <div class="image">
-                <img src="static/images/indoor3.jpeg" alt="">
+                <img src="static/images/pool_prize.jpg" alt="">
             </div>
             <div class="content">
                 $62,263,156<br>paid to winners
@@ -77,29 +85,25 @@
     <div class="eventheading">
         Featured events
     </div>
-    
     <div class="scrollable">
-       
-
         <a href="register"><div class="scroll_card">
-
-                <div class="heading">
-                    Push-up
+                <div class="cont">
+                    <div class="heading">
+                        Push-up
+                    </div>
+                    <div class="image">
+                        <img src="static/images/pushup.png" alt="">
+                    </div>
+                    <div class="description">
+                        <br>Target : 1000 pushups within 24 hours
+                    </div>
+                    <div class="content">
+                        <b>Total prize pool : 1000$<br><br>max player : 100<br><br> Bet : $10<br><br>
+                    </div>
+                    <div class="button">
+                        <button>register</button>
+                    </div>
                 </div>
-                <div class="image">
-                    <img src="static/images/pushup.png" alt="">
-                </div>
-                <div class="description">
-                    <br>Target : 1000 pushups within 24 hours
-                </div>
-                <div class="content">
-                    <b>Total prize pool : 1000$<br><br>max player : 100<br><br> Bet : $10<br><br>
-                </div>
-                <div class="button">
-                    <button>register</button>
-                </div>
-
-        
         </div></a>
         <a href="register"><div class="scroll_card">
             <div class="cont">
@@ -139,7 +143,6 @@
                     <button>register</button>
                 </div>
             </div>
-        
         </div></a>
         <a href="register"><div class="scroll_card">
             <div class="cont">
@@ -159,7 +162,6 @@
                     <button>register</button>
                 </div>
             </div>
-        
         </div></a>
         <a href="register"><div class="scroll_card">
             <div class="cont">
@@ -181,30 +183,22 @@
             </div>
         
         </div></a>
-       
-
-     
-      
     </div>
     
 </body>
 </html>
 <script>
-    var theme = document.getElementById("theme");
-    theme.onclick = function () {
-        document.body.classList.toggle("darktheme");
-        // console.log("woeking")
-    }
+    // var theme = document.getElementById("theme");
+    // theme.onclick = function () {
+    //     document.body.classList.toggle("darktheme");
+    //     // console.log("woeking")
+    // }
 
-    var time = new Date();
-        var t = time.toLocaleString('en-US', { hour: 'numeric', hour12: true })
-        var ans = time.getHours();
-        const last2 = t.slice(-2);
-        if(ans<6 || ans>18){
-             document.body.classList.toggle("darktheme");
-        }
-
-
-
-
+    // var time = new Date();
+    //     var t = time.toLocaleString('en-US', { hour: 'numeric', hour12: true })
+    //     var ans = time.getHours();
+    //     const last2 = t.slice(-2);
+    //     if(ans<6 || ans>18){
+    //         document.body.classList.toggle("darktheme");
+    //     }
 </script>
