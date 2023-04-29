@@ -1,6 +1,4 @@
-# whackiest_vamos
-FOR CODERIT HACKATHON
-
+#BlueLearn Hackathon
 ## Indoor and Outdoor Fitness Program
 # FitSprint
 This project is an online platform that allows users to participate in indoor and outdoor fitness programs, with the option to bet on their ability to achieve certain fitness goals and win prizes.
@@ -25,14 +23,7 @@ These instructions will get you a copy of the project up and running on your loc
 * Outdoor fitness program option
 * Ability to bet on fitness goals and win prizes
 * Discounts on sports Packages
-
-### Additional Task 1
-* Adding toggle for dark-light theme (done)
-* Change of theme according to time of day (done)
-
-### Additional Task 2
-* Authentication of use using gmail and password(done)
-
+* Machine Learning model for predicting the vitals of the body
 
 
 ### Built With
@@ -42,17 +33,9 @@ These instructions will get you a copy of the project up and running on your loc
 * [HTML](https://www.w3schools.com/html/) Standard Markup Language.
 * [CSS](https://www.w3schools.com/css/) Styling HTML Document.
 * [Java script](https://www.w3schools.com/js/) to create dynamic and interactive web content
+* [Scikit Learn](https://scikit-learn.org/stable/) This is used for training and testing of machine learning model
+* [Streamlit](https://streamlit.io/) This is used for the deploying the machine learning model.
 
 ### Contributers
-* Jayanth Mahadesh
+* Pranayak Uniyal
 * Joseph Braganza
-* Prakhar Singh
-
-#### Link to our PPT presentation
-* [whackiest_vamos](https://docs.google.com/presentation/d/1X_eCBIlas4nPd1oXK08-mzN5F4JOH3HampO1FuwAIUc/edit?usp=sharing)
-
-#### link to video
-* [video](https://drive.google.com/drive/folders/1LBRB4hWWYesfEbi_bTqkpbqADfxgNvUR)
-* right click and preview to easiy watch the video :)
-
-
