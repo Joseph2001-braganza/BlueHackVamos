@@ -12,7 +12,7 @@ These instructions will get you a copy of the project up and running on your loc
 * Sqlite
 
 ### Installing
-1.  Clone the Repository : git clone "https://github.com/PrakharS-18/whackiest_vamos.git"
+1.  Clone the Repository : git clone "https://github.com/Joseph2001-braganza/BlueHackVamos"
 2.  Install the dependencies : "pip install django"
 3.  Start the Development Server : "python manage.py runserver"
 4.  Open http://localhost:8000 in your browser.
